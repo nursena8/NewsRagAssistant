@@ -11,8 +11,8 @@ def get_news_data():
 
 def get_user_profile(user_id):
     return {
-        "preferred_categories": ["sports", "technology"],  # Kullanıcının tercih ettiği kategoriler
-        "preferred_sentiment": "positive"  # Kullanıcının tercih ettiği duygu
+        "preferred_categories": ["sports", "technology"], 
+        "preferred_sentiment": "positive"  
     }
 
 def suggest_news(user_profile):

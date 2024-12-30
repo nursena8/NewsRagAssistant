@@ -27,7 +27,7 @@ retriever = SentenceTransformer("sentence-transformers/paraphrase-multilingual-M
 corpus = [entry["text"] for entry in data]
 corpus_embeddings = retriever.encode(corpus, convert_to_tensor=True)
 
-print(corpus_embeddings.shape)  # (n_samples, embedding_dim)
+print(corpus_embeddings.shape)  
 query = "spor haberlerinde ne var ? "
 query_embedding = retriever.encode(query, convert_to_tensor=True)  
 
