@@ -4,7 +4,7 @@ import numpy as np
 from sentence_transformers.util import semantic_search #matching user query text
 from transformers import T5ForConditionalGeneration, T5Tokenizer #text summary
 
-conn = sqlite3.connect("news_database.db")
+conn = sqlite3.connect("api/news_database.db")
 cursor = conn.cursor()
 
 query = "SELECT title, link, description, pubDate,category,sentiment  FROM news"
@@ -28,7 +28,7 @@ corpus = [entry["text"] for entry in data]
 corpus_embeddings = retriever.encode(corpus, convert_to_tensor=True)
 
 print(corpus_embeddings.shape)  
-query = "spor haberlerinde ne var ? "
+query = "Dünya habelereinde ne var "
 query_embedding = retriever.encode(query, convert_to_tensor=True)  
 
 hits = semantic_search(query_embedding, corpus_embeddings, top_k=1)

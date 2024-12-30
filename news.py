@@ -77,8 +77,9 @@ class NewsDistributionAgent:
         conn.commit()
         conn.close()
 
-api_key = 'Your Api Key'
-url = f"https://newsdata.io/api/1/news?apikey={api_key}&language=tr"
+#api_key = 'Your Api Key'
+#url = f"https://newsdata.io/api/1/news?apikey={api_key}&language=tr"
+
 
 fetcher = NewsFetcherAgent(api_key, url)
 analyzer = NewsAnalysisAgent()
