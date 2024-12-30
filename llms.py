@@ -5,7 +5,7 @@ from sentence_transformers import SentenceTransformer
 from sentence_transformers.util import semantic_search
 from transformers import T5ForConditionalGeneration, T5Tokenizer
 
-conn = sqlite3.connect("api/news_database.db")
+conn = sqlite3.connect("news_database.db")
 cursor = conn.cursor()
 
 def save_user_preferences(user_id, category, sentiment):
