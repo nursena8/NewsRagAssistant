@@ -80,6 +80,15 @@ class NewsDistributionAgent:
 #api_key = 'Your Api Key'
 #url = f"https://newsdata.io/api/1/news?apikey={api_key}&language=tr"
 
+api_key = 'pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751'
+#url = f"https://newsdata.io/api/1/latest?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en"
+#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr"
+#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=technology"
+#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=education"
+#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr&category=sports"
+#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=business&country=us"
+url = "https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr&category=sports"
+#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=education&country=us"
 
 fetcher = NewsFetcherAgent(api_key, url)
 analyzer = NewsAnalysisAgent()

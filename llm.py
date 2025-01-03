@@ -28,10 +28,10 @@ corpus = [entry["text"] for entry in data]
 corpus_embeddings = retriever.encode(corpus, convert_to_tensor=True)
 
 print(corpus_embeddings.shape)  
-query = "Dünya habelereinde ne var "
+query = "oyun"
 query_embedding = retriever.encode(query, convert_to_tensor=True)  
 
-hits = semantic_search(query_embedding, corpus_embeddings, top_k=1)
+hits = semantic_search(query_embedding, corpus_embeddings, top_k=3)
 best_match_idx = hits[0][0]["corpus_id"]
 
 
