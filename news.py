@@ -87,7 +87,7 @@ api_key = 'pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751'
 #url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=education"
 #url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr&category=sports"
 #url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=business&country=us"
-url = "https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr&category=sports"
+url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr&category=entertainment"
 #url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=education&country=us"
 
 fetcher = NewsFetcherAgent(api_key, url)
