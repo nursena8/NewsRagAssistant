@@ -77,18 +77,8 @@ class NewsDistributionAgent:
         conn.commit()
         conn.close()
 
-#api_key = 'Your Api Key'
-#url = f"https://newsdata.io/api/1/news?apikey={api_key}&language=tr"
-
-api_key = 'pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751'
-#url = f"https://newsdata.io/api/1/latest?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en"
-#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr"
-#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=technology"
-#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=education"
-#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr&category=sports"
-#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=business&country=us"
-url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=tr&category=entertainment"
-#url = f"https://newsdata.io/api/1/news?apikey=pub_62732dec8cc1ebecf8e4a6c66aee1b8f04751&language=en&category=education&country=us"
+api_key = 'Your Api Key'
+url = f"https://newsdata.io/api/1/news?apikey={api_key}&language=tr"
 
 fetcher = NewsFetcherAgent(api_key, url)
 analyzer = NewsAnalysisAgent()
@@ -108,5 +98,5 @@ news = fetcher.fetch_news()
     
 #while True:
 #    schedule.run_pending()  
-#   time.sleep(5)  #controlling in two minutes
+#   time.sleep(5)  #controlling in 5 seconds
 
