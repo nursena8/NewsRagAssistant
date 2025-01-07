@@ -2,7 +2,8 @@
 ![Zihin Haritası Beyin Fırtınası](https://github.com/user-attachments/assets/05094d46-4faf-4c71-8354-5c695a3565e0)
 
 This project implements a **Retrieval-Augmented Generation (RAG)** model to provide answers to user queries by combining relevant data from both a local database (SQLite) and the internet. The model leverages various tools and technologies for document retrieval, embedding generation, and query answering.
-
+# Example Usage
+**Google Colab**:https://colab.research.google.com/drive/1QhGY8F7tYkaRJZXU_F_ZqnPSfqD-EJfz?usp=sharing
 ## Technologies Used
 
 - **SQLite**: Database for storing and retrieving news articles.
